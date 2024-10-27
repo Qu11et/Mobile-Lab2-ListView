@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        app:strokeWidth="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:strokeColor="@color/red">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp">
+
+            <TextView
+                android:id="@+id/listSubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/name"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/listPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listSubName"
+                android:layout_marginStart="30dp"
+                android:text="@string/price"
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/listSale2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listSubName"
+                android:layout_toEndOf="@id/listPrice"
+                android:layout_marginStart="50dp"
+                android:text="@string/sale"
+                android:textSize="16sp"
+                android:textColor="@color/grey" />
+
+
+            <ImageView
+                android:id="@+id/arrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_chevron_right_24"/>
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/baseline_star_24"/>
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/star1"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/baseline_star_24"/>
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/star2"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/baseline_star_24"/>
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/star3"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/baseline_star_border_24"/>
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/star4"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/baseline_star_border_24"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/cardView2"
+        app:layout_constraintStart_toStartOf="@id/cardView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="-30dp"
+        app:cardCornerRadius="100dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImage2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/suonnuong"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

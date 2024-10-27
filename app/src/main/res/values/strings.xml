@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ListView </string>
+
+    <string name="name"><b>Name</b> </string>
+
+    <string name="price"><b>Price</b> </string>
+
+    <string name="sale"><strike>crossed</strike> </string>
+</resources>
