@@ -6,4 +6,8 @@
     <string name="price"><b>Price</b> </string>
 
     <string name="sale"><strike>crossed</strike> </string>
+
+    <string name="info">Thông tin chi tiết </string>
+
+    <string name="lunch">Cơm trưa </string>
 </resources>

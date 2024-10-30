@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RatingBar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -22,6 +23,7 @@ public class MonManActivity extends AppCompatActivity {
     MonManAdapter monManAdapter;
     ArrayList<MonManData> manArrayList = new ArrayList<>();
     MonManData monManData;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +45,10 @@ public class MonManActivity extends AppCompatActivity {
         String[] subNameList = {"Sườn nướng", "Thịt kho trứng", "Nem nướng", "Gà kho"};
         String[] priceList = {"15000đ", "15000đ", "15000đ", "15000đ"};
         String[] sale2List = {"25000 đ", "25000 đ", "25000 đ", "25000 đ"};
+        float[] ratingList = {1f, 5f, 3f, 2.5f};
 
         for (int i = 0; i < image2List.length; i++) {
-            monManData = new MonManData(image2List[i], priceList[i], subNameList[i], sale2List[i]);
+            monManData = new MonManData(image2List[i], priceList[i], subNameList[i], sale2List[i] , ratingList[i]);
             manArrayList.add(monManData);
         }
         monManAdapter = new MonManAdapter(MonManActivity.this, manArrayList);

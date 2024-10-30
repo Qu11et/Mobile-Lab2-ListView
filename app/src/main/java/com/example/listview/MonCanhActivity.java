@@ -39,9 +39,10 @@ public class MonCanhActivity extends AppCompatActivity {
         String[] subNameList = {"Canh chua", "Canh cà chua trứng", "Canh bí đỏ", "Canh cải xanh"};
         String[] priceList = {"12000đ", "12000đ", "12000đ", "12000đ"};
         String[] sale2List = {"20000 đ", "20000 đ", "20000 đ", "20000 đ"};
+        float[] ratingList = {2.5f, 3f, 5f, 1f};
 
         for (int i = 0; i < image2List.length; i++) {
-            monCanhData = new MonCanhData(image2List[i], priceList[i], subNameList[i], sale2List[i]);
+            monCanhData = new MonCanhData(image2List[i], priceList[i], subNameList[i], sale2List[i], ratingList[i]);
             canhArrayList.add(monCanhData);
         }
         monCanhAdapter = new MonCanhAdapter(MonCanhActivity.this, canhArrayList);

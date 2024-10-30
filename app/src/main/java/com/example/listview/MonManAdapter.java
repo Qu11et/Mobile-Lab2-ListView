@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,13 +34,14 @@ public class MonManAdapter extends ArrayAdapter<MonManData> {
         TextView listName = view0.findViewById(R.id.listSubName);
         TextView listDish = view0.findViewById(R.id.listPrice);
         TextView listSale2 = view0.findViewById(R.id.listSale2);
+        RatingBar ratingBar = view0.findViewById(R.id.ratingBar);
 
         assert monManData != null;
         listImage.setImageResource(monManData.image2);
         listName.setText(monManData.subName);
         listDish.setText(monManData.price);
         listSale2.setText(monManData.sale2);
-
+        ratingBar.setRating(monManData.rating);
         return view0;
     }
 }

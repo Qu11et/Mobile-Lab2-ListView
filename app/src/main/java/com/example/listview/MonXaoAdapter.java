@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,13 +34,14 @@ public class MonXaoAdapter extends ArrayAdapter<MonXaoData> {
         TextView listName = view2.findViewById(R.id.listSubName);
         TextView listDish = view2.findViewById(R.id.listPrice);
         TextView listSale2 = view2.findViewById(R.id.listSale2);
+        RatingBar ratingBar = view2.findViewById(R.id.ratingBar);
 
         assert monXaoData != null;
         listImage.setImageResource(monXaoData.image2);
         listName.setText(monXaoData.subName);
         listDish.setText(monXaoData.price);
         listSale2.setText(monXaoData.sale2);
-
+        ratingBar.setRating(monXaoData.rating);
         return view2;
     }
 }

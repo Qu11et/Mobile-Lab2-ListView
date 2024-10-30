@@ -1,11 +1,13 @@
 package com.example.listview;
 
 import android.content.Context;
+import android.media.Rating;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,13 +35,14 @@ public class MonCanhAdapter extends ArrayAdapter<MonCanhData> {
         TextView listName = view1.findViewById(R.id.listSubName);
         TextView listDish = view1.findViewById(R.id.listPrice);
         TextView listSale2 = view1.findViewById(R.id.listSale2);
+        RatingBar ratingBar = view1.findViewById(R.id.ratingBar);
 
         assert monCanhData != null;
         listImage.setImageResource(monCanhData.image2);
         listName.setText(monCanhData.subName);
         listDish.setText(monCanhData.price);
         listSale2.setText(monCanhData.sale2);
-
+        ratingBar.setRating(monCanhData.rating);
         return view1;
     }
 }

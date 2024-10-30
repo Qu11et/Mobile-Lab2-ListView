@@ -32,9 +32,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="15dp"
                 android:text="@string/name"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -44,7 +44,7 @@
                 android:layout_below="@id/listSubName"
                 android:layout_marginStart="30dp"
                 android:text="@string/price"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textColor="@color/red"/>
 
             <TextView
@@ -55,7 +55,7 @@
                 android:layout_toEndOf="@id/listPrice"
                 android:layout_marginStart="50dp"
                 android:text="@string/sale"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textColor="@color/grey" />
 
 
@@ -67,52 +67,18 @@
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/baseline_chevron_right_24"/>
 
-            <ImageView
-                android:id="@+id/star1"
+            <RatingBar
+                android:id="@+id/ratingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="60dp"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/baseline_star_24"/>
+                android:layout_marginStart="55dp"
+                android:layout_marginBottom="30dp"
+                android:progressTint="@color/golden"
+                style="?android:attr/ratingBarStyleSmall">
 
-            <ImageView
-                android:id="@+id/star2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_toEndOf="@id/star1"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/baseline_star_24"/>
-
-            <ImageView
-                android:id="@+id/star3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_toEndOf="@id/star2"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/baseline_star_24"/>
-
-            <ImageView
-                android:id="@+id/star4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_toEndOf="@id/star3"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/baseline_star_border_24"/>
-
-            <ImageView
-                android:id="@+id/star5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_toEndOf="@id/star4"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/baseline_star_border_24"/>
-
+            </RatingBar>
         </RelativeLayout>
 
     </com.google.android.material.card.MaterialCardView>

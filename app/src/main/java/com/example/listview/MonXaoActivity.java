@@ -38,9 +38,10 @@ public class MonXaoActivity extends AppCompatActivity {
         String[] subNameList = {"Giá hẹ xào đậu hủ", "Vịt xào sả ớt", "Mực xào dưa leo", "Thịt bò xào đậu rồng"};
         String[] priceList = {"18000 đ", "18000 đ", "18000 đ", "18000 đ"};
         String[] listSale2 = {"30000 đ", "30000 đ", "30000 đ", "30000 đ"};
+        float[] ratingList = {4f, 3.5f, 2.5f, 5f};
 
         for (int i = 0; i < image2List.length; i++) {
-            monXaoData = new MonXaoData(image2List[i], priceList[i], subNameList[i], listSale2[i]);
+            monXaoData = new MonXaoData(image2List[i], priceList[i], subNameList[i], listSale2[i], ratingList[i]);
             xaoArrayList.add(monXaoData);
         }
         monXaoAdapter = new MonXaoAdapter(MonXaoActivity.this, xaoArrayList);
